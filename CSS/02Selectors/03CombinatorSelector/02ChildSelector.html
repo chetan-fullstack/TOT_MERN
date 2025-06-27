@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+
+        
+        .parent{
+            border: 2px solid green;
+        }
+        .child{
+            border: 2px solid blue;
+        }
+
+
+        .parent>p{
+            color: red;
+        }
+        </style>
+</head>
+<body>
+ 
+    <h1>Child Selector (>)</h1>
+
+    <hr>
+    <div class="parent">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, doloremque.</p>
+    </div>
+</body>
+</html>
