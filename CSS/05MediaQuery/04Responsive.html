@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+      }
+      .col-25 {
+        width: 25%;
+      }
+      h3 {
+        font-size: 25px;
+        padding: 10px 0px;
+      }
+      h3 + p {
+        font-size: 15px;
+      }
+      button {
+        background-color: blue;
+        color: aliceblue;
+        font-size: 15px;
+        border: 1px solid blue;
+        border-radius: 20px;
+        padding: 10px 30px;
+        margin: 20px 0px;
+      }
+      .section-wrapper {
+        padding: 50px 0px;
+      }
+
+      /* Media Query  */
+
+      @media (max-width: 576px) {
+        .col-25{
+          width: 100%;
+        }
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="section-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-25">
+              <div class="card">
+                <div class="image">
+                  <img src="../../Images/logo.png" alt="" />
+                </div>
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+                  iure adipisci provident natus eveniet incidunt ipsum est
+                  aperiam nemo praesentium.
+                </p>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="card">
+                <div class="image">
+                  <img src="../../Images/logo.png" alt="" />
+                </div>
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+                  iure adipisci provident natus eveniet incidunt ipsum est
+                  aperiam nemo praesentium.
+                </p>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="col-25">
+              <div class="card">
+                <div class="image">
+                  <img src="../../Images/logo.png" alt="" />
+                </div>
+                <h3>Sub-Heading</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
+                  iure adipisci provident natus eveniet incidunt ipsum est
+                  aperiam nemo praesentium.
+                </p>
+                <button>Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
