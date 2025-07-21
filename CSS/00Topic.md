@@ -18,7 +18,3 @@
     -> Relative - clear
     -> Static  - clear
 
-# Animation 
-# Tranistion and Tranform
-
-# Media query

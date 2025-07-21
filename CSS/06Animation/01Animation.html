@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <!-- Internal CSS  -->
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: green;
+
+        animation-name: moving_box;
+        animation-duration: 10s;
+        animation-delay: 2s;
+        /* animation-iteration-count: 2; */
+        animation-iteration-count: infinite;
+      }
+
+      /* @keyframes moving_box {
+        from {
+          margin-left: 0px;
+        }
+        to {
+          margin-left: 1100px;
+        }
+      } */
+
+
+
+      @keyframes moving_box {
+        0% {
+          margin-left: 0px;
+          margin-top: 0px;
+        }
+        25% {
+          margin-left: 1100px;
+          margin-top: 0px;
+        }
+        50% {
+          margin-left: 1100px;
+          margin-top: 450px;
+        }
+        75% {
+          margin-left: 0px;
+          margin-top: 450px;
+        }
+        100% {
+          margin-left: 0px;
+          margin-top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Box</div>
+  </body>
+</html>
